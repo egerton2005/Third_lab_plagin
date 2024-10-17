@@ -1,0 +1,40 @@
+{
+  "name": "movetoheader",
+  "displayName": "MoveToHeader",
+  "description": "Move selected text to header file",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.myCommand"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "extension.moveTextToHeader",
+      "title": "Move Selected Text to Header File"
+    }],
+    "keybindings": [{
+        "command": "extension.moveTextToHeader",
+        "key": "ctrl+shift+]",
+        "when": "editorTextFocus"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "eslint": "^9.11.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
