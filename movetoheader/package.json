@@ -2,7 +2,7 @@
   "name": "movetoheader",
   "displayName": "MoveToHeader",
   "description": "Move selected text to header file",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.94.0"
   },
